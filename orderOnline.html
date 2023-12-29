@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body id="orderOnline">
+    <header class="head">
+        <div class="row">
+            <div class="col-1">
+               <a href="index.html" style="text-decoration: none;color:white">RT Dosa</a>
+            </div>
+            <div class="col-2">
+                <nav>
+                    <ul>
+                        <li>
+                            <button class="cart-button">
+                                <a href=#cart>
+                                    <i class="bi bi-cart fs-3"></i>
+                                </a>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <div class="starters">
+            <table class="table table-hover table-hover-pointer">
+                <thead>
+                    <tr>
+                        <th><b>Veg Starters</b></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Veg Rolls" data-price="2.99">Veg Rolls</td>
+                        <td>2.99</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Paneer Manchurian" data-price="6.99">Paneer Manchurian</td>
+                        <td>6.99</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Gobi Manchurian" data-price="6.99">Gobi Manchurian</td>
+                        <td>6.99</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Chilli Gobi" data-price="7.50">Chilli Gobi</td>
+                        <td>7.50</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Chilli Paneer" data-price="7.50">Chilli Paneer</td>
+                        <td>7.50</td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <table class="table table-hover table-hover-pointer">
+                <thead>
+                    <tr>
+                        <th><b>Non-Veg Starters</b></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Mutton Rolls" data-price="3.99">Mutton Rolls</td>
+                        <td>3.99</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Chicken Manchurian" data-price="6.99">Chicken Manchurian</td>
+                        <td>6.99</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Chilli Fish" data-price="6.99">Chilli Fish</td>
+                        <td>6.99</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Chilli Chicken" data-price="7.50">Chilli Chicken</td>
+                        <td>7.50</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Lamb Pepper Fry" data-price="7.50"> Lamb Pepper Fry</td>
+                        <td>7.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="starters">
+            <table class="table table-hover table-hover-pointer">
+                <thead>
+                    <tr>
+                        <th><b>Veg Mains</b></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Daal Curry" data-price="5.50">Daal Curry</td>
+                        <td>5.50</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Paneer Butter Masala" data-price="6.50">Paneer Butter Masala</td>
+                        <td>6.50</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Spicy Potato Curry" data-price="6.99">Spicy Potato Curry</td>
+                        <td>6.99</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Channa Masala" data-price="6.50">Channa Masala</td>
+                        <td>6.50</td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <table class="table table-hover table-hover-pointer">
+                <thead>
+                    <tr>
+                        <th><b>Non-Veg Mains</b></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Chicken Masala" data-price="7.50">Chicken Masala</td>
+                        <td>7.50</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Madras Chicken Curry" data-price="8.00">Madras Chicken Curry</td>
+                        <td>8.00</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Madras Lamb Curry" data-price="8.50">Madras Lamb Curry</td>
+                        <td>8.50</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="King Prawn Curry" data-price="9.00">King Prawn Curry</td>
+                        <td>9.00</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table><br>
+        </div>
+
+        <div class="starters">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th><b>Breads</b></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Chapati" data-price="1.50">Chapati</td>
+                        <td>1.50</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Parotta" data-price="1.99">Parotta</td>
+                        <td>1.99</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Veechu Parotta" data-price="2.50">Veechu Parotta</td>
+                        <td>2.50</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Egg Veechu Parotta" data-price="2.99">Egg Veechu Parotta</td>
+                        <td>2.99</td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th><b>Drinks</b></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Coke" data-price="1.50">Coke</td>
+                        <td>1.50</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Diet Coke" data-price="1.50">Diet Coke</td>
+                        <td>1.50</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Mango Lassi" data-price="2.50">Mango Lassi</td>
+                        <td>2.50</td>
+                    </tr>
+                    <tr onclick="addToCart(this)">
+                        <td data-item="Salt/Sweet Lassi" data-price="2.50">Salt/Sweet Lassi</td>
+                        <td>2.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div><br>
+    <div class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="checkout">
+            <p>Total: £<span id="total">0.00</span></p>
+            <button id="checkoutBtn" class="btn btn-primary" onclick="checkout()" disabled>Checkout</button>
+        </div>
+    </div><br>
+    <div id="overlay"></div>
+    <div class="payment" id="payment">
+         <!-- Close button for the dialog -->
+         <button onclick="paymentDialog()" class="closebtn"><i class="bi bi-x-circle-fill"></i></button>
+         <!-- Content of the dialog -->
+         <iframe src="paymentpage.html" width="100%" height="400px" frameborder="0"></iframe>
+    </div>
+</body>

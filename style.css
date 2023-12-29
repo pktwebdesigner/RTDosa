@@ -1,0 +1,676 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contactCard:hover {
+        width: 50vw;
+        /* Set the width to 50% of the viewport width on hover */
+    }
+}
+
+.banner {
+    background-color: rgba(10, 10, 10, 0.4);
+    height: 90vh;
+    width: 100vw;
+    padding: 5vh 0;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+.banner h1 {
+    display: inline-block;
+    font-size: 3em;
+    color: white;
+    font-family: "Lobster";
+    text-shadow: 3px 2px brown;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.table p {
+    font-size: 1em;
+    color: black;
+}
+
+.table h1 {
+    font-size: 1em;
+    color: black;
+}
+
+.banner h2 {
+    display: block;
+    font-size: 2em;
+    color: white;
+    margin-left: 5%;
+    font-family: "Catamaran";
+}
+
+.scrolled {
+    position: fixed;
+    background-color: rgb(212, 80, 80);
+    width: 100vw;
+    top: 0;
+    padding: 0;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+
+.icon {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin-top: 2%
+}
+
+li {
+    padding: 0px 10px;
+}
+
+.banner a {
+    padding: 0px 40px;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 2px brown;
+
+}
+
+.nav-btn {
+    width: auto;
+    border: none;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    margin-right: 5%;
+    box-shadow: 5px 5px rgb(218, 112, 112);
+}
+
+.homeNav a:hover {
+    color: black;
+    text-shadow: none;
+    transition: 0.5s;
+    border-radius: 30%;
+}
+
+.TopPicks {
+    position: relative;
+    background-color: rgba(10, 10, 10, 0.4);
+    padding: 2% 0;
+    width: 100vw;
+}
+
+.TopPicks::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Toppicksbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.TopPicks h1 {
+    color: black;
+    text-align: center;
+    font-family: "Lobster";
+}
+
+.TopPicks p {
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.menuBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.menuBtn button {
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    padding: 1%;
+    width: 25vw;
+    height: auto;
+    border: none;
+    box-shadow: 5px 5px rgb(218, 112, 112);
+    color: white;
+    font-size: 1.5em;
+}
+
+.TopPicks button:hover {
+    transform: scale(1.1);
+}
+
+.carousel-inner {
+    width: 70vw;
+    margin-left: 15vw;
+}
+
+.carousel-item p {
+    color: black;
+    font-size: 1em;
+    font-weight: normal
+}
+
+.TopPicks .col {
+    height: 70vh;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px black;
+    margin: 0 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.col:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.contact {
+    position: relative;
+    background-color: rgb(216, 208, 208, 0.7);
+    width: 100vw;
+    height: 100%;
+}
+
+.contactCard {
+    height: 60vh;
+    width: auto;
+    margin: 40px 40px;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.contactCard:hover {
+    width: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 7px rgb(71, 70, 70);
+}
+
+.contactCard p {
+    color: black;
+    font-size: 1em;
+}
+
+.Aboutus {
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    background-image: url("aboutbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Aboutus h1 {
+    color: black;
+    text-align: center;
+    font-family: "Lobster";
+}
+
+.Aboutus p {
+    color: rgb(128, 43, 43);
+    font-size: 1.5em;
+    font-family: "Sofia";
+    text-align: center;
+    margin-top: 2%;
+    animation: slideIn 2s ease-out;
+}
+
+.gallery {
+    margin-bottom: 20px;
+    width: 100vw;
+}
+
+.gallery h1 {
+    color: black;
+    text-align: center;
+    font-family: "Lobster";
+}
+
+.col-lg {
+    margin-left: 2px;
+}
+
+.col-sm {
+    margin-right: 2px;
+    object-fit: contain;
+}
+
+.gal-img-sm {
+    width: 100%;
+    height: 50vh;
+}
+
+.gal-img-lg {
+    width: 100%;
+    height: 50vh;
+}
+
+.starters {
+    display: flex;
+    width: 100vw;
+}
+
+.table {
+    margin-right: 5vw;
+}
+
+.table tr {
+    cursor: pointer;
+}
+
+.topScroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #504646;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    font-weight: bolder;
+    z-index: 100;
+}
+
+.map {
+    height: 30vh;
+}
+
+.footer {
+    width: 100vw;
+    height: auto;
+    text-align: left;
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+}
+
+/*orderonline page css*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    background-color: rgb(224, 65, 65);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+    margin-right: 0;
+}
+
+.head p {
+    color: white;
+    font-weight: bold;
+}
+
+.head .col-1 {
+    width: 80vw;
+}
+
+.menu {
+    margin-top: 10vw;
+    width: 100vw;
+    margin-right: 0;
+}
+
+.cart-button {
+    background: none;
+    border: none;
+    color: white;
+}
+
+.cart-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.cart-button i {
+    size: 150px;
+}
+
+.starters .row {
+    align-items: center;
+}
+
+.gal-img {
+    background-color: black;
+}
+
+/*view cart*/
+.cart {
+    width: 50vw;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    color: black;
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout p {
+    font-size: 1.5em;
+    color: black
+}
+
+.btn-primary {
+    background-color: rgb(224, 65, 65);
+    border: none;
+}
+
+#customDialog,
+#confirmDialog,
+#payment {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.closebtn {
+    background: none;
+    border: none;
+    margin-left: 95%;
+}
+
+.contactDetails {
+    display: none;
+}
+
+.totalAmount {
+    color: black;
+    border: 2px 2px black;
+    background-color: rgb(223, 218, 218);
+    margin: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.totalAmount p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-btn {
+    margin-top: 10vh;
+    position: absolute;
+}
+
+/*tableReservation style*/
+
+.reservation-form {
+    margin-top: 5%;
+}
+
+.input-group {
+    width: 50vw;
+    margin-bottom: 5%;
+    margin-left: 25vw;
+    border: 2px 2px black;
+    border-radius: 5px;
+    font-size: 5%;
+}
+
+.input-group i {
+    font-size: 10px;
+}
+
+.input-group select {
+    font-size: 10px;
+}
+
+@media screen and (max-width:1062px) {
+    .banner {
+        height: auto;
+        width: 100vw;
+        padding: 2.5vh 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        color: white;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+
+    .homeNav a {
+        font-size: 0.8em;
+    }
+
+    .nav-btn {
+        font-size: 0.8em;
+    }
+
+    .contact {
+        height: 100%;
+    }
+
+    .contactCard {
+        height: auto;
+        font-size: 1em;
+        width: auto;
+    }
+
+    .contact .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contactCard p {
+        text-wrap: nowrap;
+    }
+
+    img {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .TopPicks .row {
+        display: block;
+    }
+
+    .TopPicks .col {
+        height: auto;
+    }
+
+    .menuBtn button {
+        font-size: 0.8em;
+    }
+
+    .Aboutus {
+        height: auto;
+        padding-bottom: 2%;
+        width: 100vw;
+    }
+
+    .Aboutus p {
+        font-size: 1.5em;
+        text-wrap: wrap;
+    }
+
+    .col-lg {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2px;
+        width: 100vw;
+    }
+
+    .col-sm {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2px;
+        width: 100vw;
+    }
+
+    .gal-img-sm {
+        margin-bottom: 1.5px;
+        width: 50vw;
+        height: 25vh;
+    }
+
+    .gal-img-lg {
+        margin-bottom: 1.5px;
+        width: 50vw;
+        height: 25vh;
+    }
+
+    .map {
+        width: 35vw;
+        margin-bottom: 2%;
+    }
+
+    .homeNav a:not(.icon) {
+        display: none;
+    }
+
+    .homeNav a.icon {
+        display: block;
+        left: 0;
+        position: absolute;
+        font-size: larger;
+    }
+
+    .homeNav.responsive {
+        position: relative;
+        background-color: rgb(224, 65, 65);
+        height: auto;
+        transition: background-color 0.7s ease;
+    }
+
+    .homeNav.responsive a.icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .homeNav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        transition: 0.5s fade-in;
+        margin-bottom: 2%;
+    }
+
+    .homeNav.responsive ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homeNav.responsive button {
+        width: auto;
+    }
+
+    .input-group {
+        width: auto;
+        margin-left: 0vw;
+        border: 2px 2px black;
+        border-radius: 5px;
+    }
+
+    #confirmDialog {
+        width: 100vw;
+    }
+
+    #confirmDialog p {
+        font-size: 5vw;
+    }
+
+    .cart {
+        width: 100vw;
+    }
+
+    .input-group i {
+        font-size: 5vw;
+    }
+
+    .input-group select {
+        font-size: 5vw;
+    }
+
+}
